@@ -1,3 +1,8 @@
+#Before we start working on advanced math libraries of python like numpy and Scipy
+#we will explore the basic math lib provided by base python 3.6 package
+#Reddit : @cnkumar20
+#Email :cnkumar20@gmail.com
+
 import math as math
 from math import pi as pi
 from random import randint
