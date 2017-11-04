@@ -1,10 +1,17 @@
 import math as math
 from math import pi as pi
 from random import randint
+import matplotlib.pyplot as pyplot
+from decimal import Decimal
+from decimal import Decimal
 #Addition
 2+3
 2+(-5)
 1000+12
+
+
+
+
 #Subtraction
 2-3
 2-(-5)
@@ -21,6 +28,7 @@ from random import randint
 #division
 2/3
 math.sqrt(4)
+
 
 
 #Trignometry
@@ -54,3 +62,8 @@ math.pow(math.sin(x),2)+math.pow(math.cos(x),2)
 math.pow(1/math.cos(x),2)
 result = ((1 + math.pow(math.tan(x),2))==math.pow(1/math.cos(x),2))
 print(result)
+
+
+#Decimal
+
+Decimal('-3.14').as_integer_ratio()
