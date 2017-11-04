@@ -22,9 +22,17 @@ ara = np.arange(10)
 print(type(ara))
 ara = np.arange(10).reshape(5,2)
 print(ara)
+# [[0 1]
+#  [2 3]
+#  [4 5]
+#  [6 7]
+#  [8 9]]
 print(type(ara))
 z = np.ones((3,4))
 print(z)
+# [[ 1.  1.  1.  1.]
+#  [ 1.  1.  1.  1.]
+#  [ 1.  1.  1.  1.]]
 #Matrix returns ndarray
 a=np.mat('4 3; 2 1')
 b=np.mat('1 2; 3 4')
@@ -39,6 +47,8 @@ print(a*b)
 c=np.array([[4, 3], [2, 1]])
 d=np.array([[1, 2], [3, 4]])
 print(c@d)
+# [[13 20]
+#  [ 5  8]]
 
 #c*c
 #[[4, 3], [2, 1]] * [[4, 3], [2, 1]]
@@ -48,20 +58,24 @@ print(c**2)
 #Matix product , or product of vectors with multiple parameters(dimension)
 print(np.dot(c,d))
 
-def matrix_multiply(a,b):
-    # result is 3x4
-    result =    [[0,0,0,0],[0,0,0,0],[0,0,0,0]]
-    # iterate through rows of X
-    for i in range(len(a)):
-        # iterate through columns of Y
-        for j in range(len(b[0])):
-            # iterate through rows of Y
-            for k in range(len(Y)):
-                result[i][j] += X[i][k] * Y[k][j]
-    return result
 
-func = np.vectorize(matrix_multiply)
-print(func(c,d))
+#Cases 1
+arra1 = np.array([1,2,3,4])
+arra2 = np.array([5,6,7,8])
+print(arra1)
+# [1 2 3 4]
+print(arra2)
+# [5 6 7 8]
+arra3 = arra2.reshape(4,1)
+print(arra3)
+# [[5]
+#  [6]
+#  [7]
+#  [8]]
+print(arra1*arra2)
+# [ 5 12 21 32]
+print(np.dot(arra1,arra2))
+#70
 
 #Lets start from series of numbers in one dimensional matrix aka Array
 # Example 1 : f(x)= x
@@ -94,7 +108,7 @@ print(func(arr))
 
 #p
 # Now lets move to next step , thats to play with series of numbers , where on each element
-# atomic operation is done
+# atomic operation is done.
 #To perform Vector mathematical functions functions
 #Examp f1(x) = f1+2
 #Then above array should be
