@@ -9,7 +9,7 @@ import scipy as sp
 # and then later see if the problem is solved just once or million time on different input and repetitively there comes the thing we are learning here!!
 # If you don;t undersatnd anything then you need to work out problems <b>by hand </b>.
 #
-#And also brush up python and dats structures basics (List,Arrays,Dict,Set,class,)
+#And also brush up python and data structures basics (List,Arrays,Dict,Set,class,)
 #numpy library helps to code it python great deal (check : numpy-wiki).
 #
 #p Refer to my <hl>matplot</hl> lib
